@@ -1,60 +1,34 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #f4f4f4;
-  text-align: center;
-}
 
 .player {
-  max-width: 750px;
+  max-width: 800px;
   margin: 0 auto;
-  background: #000;
-  color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 5px solid black;
+  position: relative;
 }
 
-video {
+.player__video {
   width: 100%;
-  display: block;
-}
-
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background: #333;
-}
-
-.player__button,
-.skip {
-  font-size: 18px;
-  padding: 8px 12px;
-  cursor: pointer;
-  background: #444;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  margin: 4px;
-}
-
-.player__slider {
-  margin: 4px 8px;
 }
 
 .progress {
-  background: #555;
-  height: 8px;
-  cursor: pointer;
-  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.progress__filled {
+  background-color: green;
+  height: 100%;
 }
 
-.progress__filled {
-  width: 0%;
-  background: #ffc600;
-  height: 100%;
-  transition: width 0.2s;
+.player__button {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 5px;
+}
+.player__slider {
+  width: 200px;
+  margin: 5px;
 }
