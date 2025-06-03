@@ -1,52 +1,60 @@
-/* Your CSS Code here. */
-body{
-	padding:20px;
-	font-family:Arial, sans-serif;
-	background:#f4f4f4;
-	text-align:center;
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+  text-align: center;
 }
-.player{
-	max-width: 750px;
-    margin: 0 auto;
-    background: #000;
-    color: white;
-    border-radius: 10px;
-    overflow: hidden;
+
+.player {
+  max-width: 750px;
+  margin: 0 auto;
+  background: #000;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-video{
-	width:100%;
-	display:block;
+
+video {
+  width: 100%;
+  display: block;
 }
-.controls{
-	justify-content:space-between;
-	display:flex;
-	flex-wrap:wrap;
-	align-items:center;
-	padding:10px;
-	background:#333;
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #333;
 }
-.player_button, .skip{
-	font-size:18px;
-	padding:8px 12px;
-	cursor:pointer;
-	background:#444;
-	border:none;
-	color:white;
-	border-radius:5px;
-	margin:4px;
+
+.player__button,
+.skip {
+  font-size: 18px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background: #444;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 4px;
 }
-.player_slider{
-	margin:4px;
+
+.player__slider {
+  margin: 4px 8px;
 }
-.progress{
-	background:#555;
-	cursor:pointer;
-	height:8px;
-	width:100%;
+
+.progress {
+  background: #555;
+  height: 8px;
+  cursor: pointer;
+  width: 100%;
 }
-.progress_filled{
-	width: 0%;
-    background: #ffc600;
-    height: 100%;
-    transition: width 0.02s;
+
+.progress__filled {
+  width: 0%;
+  background: #ffc600;
+  height: 100%;
+  transition: width 0.2s;
 }
