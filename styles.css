@@ -1,2 +1,52 @@
-
 /* Your CSS Code here. */
+body{
+	padding:20px;
+	font-family:Arial, sans-serif;
+	background:#f4f4f4;
+	text-align:center;
+}
+.player{
+	max-width: 750px;
+    margin: 0 auto;
+    background: #000;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+video{
+	width:100%;
+	display:block;
+}
+.controls{
+	justify-content:space-between;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	padding:10px;
+	background:#333;
+}
+.player_button, .skip{
+	font-size:18px;
+	padding:8px 12px;
+	cursor:pointer;
+	background:#444;
+	border:none;
+	color:white;
+	border-radius:5px;
+	margin:4px;
+}
+.player_slider{
+	margin:4px;
+}
+.progress{
+	background:#555;
+	cursor:pointer;
+	height:8px;
+	width:100%;
+}
+.progress_filled{
+	width: 0%;
+    background: #ffc600;
+    height: 100%;
+    transition: width 0.02s;
+}
